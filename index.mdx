@@ -40,52 +40,14 @@ New here? Start in order:
 
 ---
 
-## Templates
-
-Copy-paste ready files — drop them into your repo and adjust.
-
-### Workflow files `.github/workflows/`
-
-| Template                                                                                                                                     | Use when                                         |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| [01-basic-review.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/01-basic-review.yml)           | Starting point — Google Gemini, every PR         |
-| [02-openrouter.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/02-openrouter.yml)               | One key for Claude, GPT, Gemini, Llama, and more |
-| [03-filtered-review.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/03-filtered-review.yml)     | Scope to branches, labels, or authors            |
-| [04-on-demand-only.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/04-on-demand-only.yml)       | Manual triggers only — no auto-review            |
-| [05-nightly-docs.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/05-nightly-docs.yml)           | Nightly docs drift check                         |
-| [06-weekly-security.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/06-weekly-security.yml)     | Weekly security audit                            |
-| [07-anthropic.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/07-anthropic.yml)                 | Anthropic Claude                                 |
-| [08-vertex-ai.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/08-vertex-ai.yml)                 | Google Vertex AI (GCP, no API key)               |
-| [09-openai-compatible.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/09-openai-compatible.yml) | Together AI, Fireworks, Ollama, vLLM             |
-| [10-amazon-bedrock.yml](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/workflows/10-amazon-bedrock.yml)       | Amazon Bedrock (AWS)                             |
-
-### `.reviewerc` files
-
-| Template                                                                                                                                       | Use when                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [01-basic.reviewerc](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/reviewerc/01-basic.reviewerc)               | Minimal — just set a default model |
-| [02-security.reviewerc](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/reviewerc/02-security.reviewerc)         | Security scan on every PR          |
-| [03-nightly-docs.reviewerc](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/reviewerc/03-nightly-docs.reviewerc) | Docs + security on a schedule      |
-| [04-full-example.reviewerc](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/reviewerc/04-full-example.reviewerc) | All features, commented            |
-
-### Context file `.github/`
-
-| Template                                                                                                                       | Use when                      |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| [copilot-context.md](https://github.com/BraCoded02024/RGT-AI-Agent-USER-Guide-/blob/main/templates/context/copilot-context.md) | Starter team conventions file |
-
----
-
 ## Quick answers
 
 **Just want it running now →** [Setup guide](/rgt-docs/02-setup)
 
 **Not sure which provider to use →** [Providers](/rgt-docs/providers) — Google Gemini recommended
 
-**Want to focus on security →** [Custom commands](/rgt-docs/06-custom-commands) + [02-security.reviewerc](/templates/reviewerc/02-security.reviewerc)
+**Want manual triggers only →** [On-demand triggers](/rgt-docs/05-on-demand-triggers)
 
-**Want manual triggers only →** [On-demand triggers](/rgt-docs/05-on-demand-triggers) + [04-on-demand-only.yml](/templates/workflows/04-on-demand-only.yml)
-
-**Want nightly maintenance →** [Nightly maintenance](/rgt-docs/07-nightly-maintenance) + [05-nightly-docs.yml](/templates/workflows/05-nightly-docs.yml)
+**Want nightly maintenance →** [Nightly maintenance](/rgt-docs/07-nightly-maintenance)
 
 **Something not working →** [FAQ](/rgt-docs/10-faq)
