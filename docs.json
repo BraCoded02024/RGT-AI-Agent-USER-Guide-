@@ -16,7 +16,7 @@
           {
             "group": "Introduction",
             "pages": [
-              "rgt-docs/index",
+              "index",
               "rgt-docs/01-what-it-does"
             ]
           },
